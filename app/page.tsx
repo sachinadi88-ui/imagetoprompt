@@ -53,7 +53,7 @@ export default function Home() {
           </p>
 
           <div className="flex justify-end w-full mt-2">
-  <p className="text-sm text-green-500 italic font-medium">
+  <p className="text-lg text-green-500 italic font-bold">
     Designed by Sachin Adi
   </p>
 </div>
