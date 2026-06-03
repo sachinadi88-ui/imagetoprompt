@@ -49,7 +49,7 @@ export default function Home() {
 
           <p className="mt-4 text-gray-600 text-lg">
             Upload any image and generate a universal prompt that can be used in
-            Flux, Midjourney, SDXL, GPT Image and other AI image generation models.
+            any other AI Image generation models.
           </p>
 
           <div className="flex justify-end w-full mt-2">
