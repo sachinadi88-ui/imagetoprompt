@@ -87,16 +87,14 @@ Output ONLY the final prompt.
         completion.choices[0].message.content
     });
 
-  } catch (error) {
-    console.error(error);
+  } catch (error: any) {
+  console.error(error);
 
-    return Response.json(
-      {
-        error: "Failed to generate prompt"
-      },
-      {
-        status: 500
-      }
-    );
-  }
+  return Response.json(
+    {
+      error: error?.message || String(error),
+    },
+    { status: 500 }
+  );
+}
 }
