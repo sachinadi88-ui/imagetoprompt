@@ -26,7 +26,7 @@ export async function POST(req: Request) {
 
     const completion =
       await openai.chat.completions.create({
-        model: "openrouter/free",
+        model: "meta-llama/llama-3.2-11b-vision-instruct:free",
 
         messages: [
           {
