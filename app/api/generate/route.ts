@@ -26,7 +26,7 @@ export async function POST(req: Request) {
 
     const completion =
       await openai.chat.completions.create({
-        model: "qwen/qwen-2.5-vl-7b-instruct:free",
+        model: "openrouter/free",
 
         messages: [
           {
