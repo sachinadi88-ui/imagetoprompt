@@ -27,7 +27,13 @@ export default function Home() {
 
       const data = await response.json();
 
-      setPrompt(data.prompt || "No prompt generated.");
+if (!response.ok) {
+  setPrompt(data.error || "Unknown error");
+  setLoading(false);
+  return;
+}
+
+setPrompt(data.prompt);
     } catch (error) {
       console.error(error);
       setPrompt("Error generating prompt.");
